@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    
+    padding: 0;
+    
+    font-family: 'Quicksand', sans-serif;
+}
+:root{
+    --very-light-brown: #F7ECDE;
+    --light-brown: #E9DAC1;
+    --grey-blue: #8890BA;
+    --light-green: #9ED2C6;
+    --green: #54BAB9;
+    --sm: 13px;
+    --md: 15px;
+    --lg: 18px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header-right{
+    margin-right: 100px;
+}
+header .header-left{
+    margin-left: 100px;
+}
+header .header-left .header-title{
+    color: white;
+    font-size: 25px;
+    line-height: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+header .header-right .header-list{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+header .header-right ul{
+    list-style: none;
+}
+header .header-right a{
+    font-size: var(--md);
+    font-size: 15px;
+    margin-right: 10px;
+    color: white;
+    padding: 4px;
+}
+header .header-right a:hover{
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(231, 239, 119),
+      0 0 82px rgb(231, 239, 119),
+      0 0 92px rgb(231, 239, 119),
+      0 0 102px rgb(231, 239, 119),
+      0 0 151px rgb(231, 239, 119);
+    border-radius: 8px;
+}
+main{
+    width: 100%;
+}
+.main-section-container{
+    width: 100%;
+    height: 80vh;
+    background-image: url("./img/imges/main-accountant-profile.jpg");
+    background-size: cover;
+    padding-top: 70px;
+    z-index: 1;
+}
+.main-info-photo-container{
+    display: flex;
+    opacity: 0.9;
+    z-index: 2;
+    justify-content: space-between;
+    background-color: #e8e8e4;
+    border-radius: 7px;
+    width: 80%;
+    max-width: 900px;
+    min-height: 300px;
+    max-height: 400px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+.main-info-photo-container .main-section-text{
+    width: 50%;
+    height: 40%;
+}
+.main-info-photo-container .main-section-text h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+}
+.main-info-photo-container .main-section-text p{
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+    color: #3a3a3a;
+}
+.main-section-img img{
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    border-radius: 12px;
+    z-index: 3;
+}
+.experience-section {
+    background-color: #212529;
+    padding-bottom: 20px;
+}
+.experience-section .experience-title{
+    text-align: center;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    padding-bottom: 15px;
+    width: 90%;
+    color: rgb(245, 245, 245);
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.experience-section .grid-cards-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 25px;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+
+}
+.experience-section .grid-cards-container .experience-info{
+    background-color: #343a40;
+    width: 90%;
+    min-width: 330px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.experience-section .grid-cards-container .secretaria p{
+    margin-top: 25px;
+}
+.experience-section .grid-cards-container .experience-info h3{
+    margin-bottom: 8px;
+    color:rgb(245, 245, 245);
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    
+}
+.experience-section .grid-cards-container .experience-info p{
+    color:rgb(245, 245, 245);
+    font-size: 14px;
+}
+.experience-section .grid-cards-container .experience-info figure{
+    background-color: white;
+    width: 33px;
+    height: 33px;
+    border-radius: 50px;
+}
+.experience-section .grid-cards-container .experience-info figure img{
+    margin-left: 4px;
+    margin-top: 3px;
+    width: 24px;
+    height: 24px;
+}
+.main-services-contac-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main-services-contac-container .services-container{
+    background-color: rgb(241, 241, 241);
+    height: 260px;
+    width: 450px;
+    padding: 15px;
+    justify-items: center;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.main-services-contac-container .services-container ul h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.main-services-contac-container .services-container ul{
+    list-style: none;
+}
+.main-services-contac-container .containter-contact{
+    background-color: rgb(241, 241, 241);
+    height: 260px;
+    width: 450px;
+    padding: 15px;
+    justify-items: center;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.main-services-contac-container .containter-contact ul{
+    list-style: none;
+}
+.main-services-contac-container .containter-contact ul h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.main-services-contac-container .containter-contact ul li img{
+    vertical-align: middle;
+}
+.main-services-contac-container .containter-contact ul li a{
+    color: black;
+}
+footer{
+    height: 60px;
+    background-color: rgb(156, 156, 156);
+    width: 100%;
+    
+}
+footer .footer-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px
+}
+footer .footer-container p a{
+    color: black;
+}
+footer .footer-container img{
+    width: 50px;
+    height: 40px;
+}
+/*Media queries*/
+@media screen and (max-width: 990px){
+    .experience-section .grid-cards-container{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+    }
+    .experience-section .grid-cards-container .experience-info{
+        width: 80%;
+        min-width: 330px;
+    }
+    .main-section-container{
+        height: fit-content;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .main-section-img img{
+        display: none;
+    }
+    .main-info-photo-container .main-section-text{
+        width: 100%;
+    }
+    .main-info-photo-container{
+        height: fit-content;
+    }
+    .main-services-contac-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-services-contac-container .services-container{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 650px){
+    header .header-right{
+        display: none;
+    }
+    .main-info-photo-container{
+        width: 90%;
+        padding: 20px 20px;
+        align-items: center;
+    }
+    .main-info-photo-container .main-section-text h1{
+        font-size: 30px;
+    }
+    .main-info-photo-container .main-section-text p{
+        font-size: 16px; 
+    }
+    .main-services-contac-container .services-container{
+        width: 90%;
+        height: auto;
+    }
+    .main-services-contac-container .containter-contact{
+        width: 90%;
+        height: auto;
+    }
+    footer .footer-container img{
+        display: none;
+    }
+}
